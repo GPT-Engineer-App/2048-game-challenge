@@ -129,7 +129,7 @@ const Index = () => {
           {grid.map((row, rowIndex) => (
             row.map((tile, colIndex) => (
               <GridItem key={`${rowIndex}-${colIndex}`} w="50px" h="50px" bg={tile === 0 ? 'gray.200' : 'orange.300'} display="flex" alignItems="center" justifyContent="center">
-                {tile !== 0 &amp;&amp; <Text>{tile}</Text>}
+                {tile !== 0 && <Text>{tile}</Text>}
               </GridItem>
             ))
           ))}
